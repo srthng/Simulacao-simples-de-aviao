@@ -31,9 +31,36 @@ let aviao = {
             console.log("a velocidade atual do avião : " + this.velocidade + "km/h")
         }
     },
+    decolar: function(){
+        if(this.velocidade> 200){
+            console.log("não foi possível decolar por causa da baixa velocidade")
+        }
+        if(this.velocidade<=200){
+            console.log("Decolando")
+        }
+    },
+    pouso: function(){
+        if(this.velocidade> 200){
+            console.log("não foi possível pousar por causa da baixa velocidade")
+        }
+        if(this.velocidade<=200){
+            console.log("pousando")
+        }
+    },
+    
 }
 aviao.ligar()
+aviao.desligar()
 
 aviao.acelerar()
+aviao.acelerar()
+aviao.acelerar()
+aviao.acelerar()
 
+aviao.desacelerar()
+aviao.desacelerar()
+aviao.desacelerar()
+aviao.desacelerar()
 
+aviao.decolar()
+aviao.pouso()
